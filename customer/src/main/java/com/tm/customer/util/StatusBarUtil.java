@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.baidu.mobads.AdSettings;
+import com.baidu.mobads.AppActivity;
+import com.baidu.mobads.InterstitialAd;
+
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -154,5 +158,10 @@ public class StatusBarUtil {
             return false;
         }
     }
+
+    public static void getId(Activity activity) {
+        InterstitialAd interAd =new InterstitialAd(activity, "");
+    }
+
 
 }
